@@ -14,11 +14,11 @@
                     <ul>
                         <% for(post of posts){ %>
 
-                            <li>
+                            <li id="post-<%= post._id %>">
                                 <p>
                                     <% if (locals.user && locals.user.id==post.user.id){ %>
                                         <small>
-                                            <a href="/posts/destroy/<%= post.id %>">X</a>
+                                            <a class="delete-post-button" href="/posts/destroy/<%= post.id %>">X</a>
                                         </small>
                                         <% } %>
                                             <%= post.content %>
@@ -43,15 +43,18 @@
                                                     <% for (comment of post.comments){%>
 
                                                         <p>
-                                                            <% if (locals.user && locals.user.id == comment.user.id){ %>
+                                                            <% if (locals.user && locals.user.id==comment.user.id){ %>
                                                                 <small>
                                                                     <a href="/comments/destroy/<%= comment.id %>">X</a>
                                                                 </small>
                                                                 <% } %>
 
-                                                            <%= comment.content %>
-                                                                <br>
-                                                            <%= comment.user.name%>
+                                                                    <%= comment.content %>
+                                                                        <br>
+                                                                        <small>
+
+                                                                            <%= comment.user.name%>
+                                                                        </small>
                                                         </p>
                                                         <%} %>
                                                 </ul>
