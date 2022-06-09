@@ -86,3 +86,5 @@
 [0mGET /users/auth/google [36m302[0m 16.994 ms - 0[0m
 [0mGET /users/auth/google/callback?code=4%2F0AX4XfWjMB-D8I_40nWRJ0NX98hCUzt7wuKutGwTD2Gox9bo2kdgLxIPtkKEiv2Lzg_HA3A&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 1215.041 ms - 46[0m
 [0mGET / [32m200[0m 72.593 ms - 8875[0m
+[0mGET / [32m200[0m 172.322 ms - 8540[0m
+[0mGET /users/profile/62864f738f72017b73d8b733 [32m200[0m 50.922 ms - 2050[0m
