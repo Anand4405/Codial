@@ -24,7 +24,7 @@
    
    // method to create post in DOM
 
-   let newPostDom = fucntion(post){
+   let newPostDom = function(post){
        return $(`<li id="post-${post._id }">
        <p>
            
@@ -37,6 +37,12 @@
                        <small>
                            ${ post.user.name}
                        </small>
+                       <br>
+                       <small>
+                       <a class='toggle-like-button' data-likes = '0' href='/likes/toggle/?id=${post._id}&type=Post>
+                       </a>
+                       </small>
+
        </p>
        <div class="post-comments">
           

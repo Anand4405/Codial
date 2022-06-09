@@ -1,0 +1,45 @@
+.sign-in {
+  height: 4%;
+  margin-left: 40%;
+  margin-top: 10px;
+  width: 22%;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif; }
+  .sign-in .email {
+    margin-top: -15px; }
+
+.sign-in-submit {
+  height: 4%;
+  margin-top: 5px;
+  font-size: medium;
+  text-align: center;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 40%;
+  width: 22%;
+  background-color: #db9c15; }
+
+.sign-in-div h1 {
+  margin-left: 47%;
+  color: #c58906; }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .sign-in {
+    height: 4%;
+    margin-left: 35%;
+    margin-top: 10px;
+    width: 30%;
+    font-size: medium; }
+  .sign-in-div h1 {
+    margin-left: 39%;
+    color: #c58906; }
+  .sign-in-submit {
+    height: 4%;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-left: 35%;
+    width: 30%;
+    background-color: #db9c15; } }

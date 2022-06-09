@@ -40,7 +40,7 @@ module.exports.update = async function(req,res){
                     // saving the  path of the uploaded file into the avatar field in the user
                     user.avatar = User.avatarPath + '/'+req.file.filename;
                 }
-
+                req.flash('success','Updated!!');
                 user.save();
                 return res.redirect('back');
 
@@ -108,7 +108,7 @@ module.exports.create = function(req, res){
 // sign in and create session
 module.exports.createSession = function(req,res){
     req.flash('success','Logged in Successfully');
-    return res.redirect('/');
+    return res.redirect('/');}
     // // find user
     // User.findOne({email:req.body.email},function(err,user){
     //     if(err){
@@ -131,7 +131,7 @@ module.exports.createSession = function(req,res){
     //     }
     // })
     
-}
+
 
 module.exports.destroySession = function(req,res){
     req.logout();
